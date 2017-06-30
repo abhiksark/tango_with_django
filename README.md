@@ -1,0 +1,1 @@
+Basic First Django Project 
