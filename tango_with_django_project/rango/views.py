@@ -5,6 +5,10 @@ from rango.models import Page
 from rango.forms import CategoryForm
 
 # Create your views here.
+def about(request):
+	print(request.method)
+	print(request.user)
+	return HttpResponse('Rango says: Here is the about page.<a href="/rango/">Index</a>')
 def index(request):
 	# Construct a dictionary to pass to the template engine as its context.
 	# Note the key boldmessage is the same as {{ boldmessage }} in the template!
